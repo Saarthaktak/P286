@@ -43,6 +43,7 @@ Robot {
         size 1.2 3 1
       }
     }
+Solid { translation 0 -1.26 0.55 children [ DEF cam_stand Shape { appearance PBRAppearance { baseColor 0.3 0.3 0.3 } geometry Box { size 0.3 0.3 0.1 } } Camera { translation 0 0 0.13 rotation 0 0 1 -1.5707953071795862 children [ DEF cam Shape { appearance PBRAppearance { } geometry Box { size 0.1 0.1 0.1 } } ] boundingObject USE cam physics Physics { mass 1 } } ] name "solid(4)" boundingObject USE cam_stand physics Physics { mass 1 } }
     DistanceSensor {
       translation 0.35 -1.5 0
       rotation 0 0 1 -1.5707853071795865
